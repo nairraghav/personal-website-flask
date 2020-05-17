@@ -1,18 +1,73 @@
+<style>
+    .carousel-caption {
+        position: relative;
+        bottom: 10px
+    }
+</style>
 {% extends "base.html" %}
 
 {% block title %}Home Page{% endblock %}
 
 
 {% block content %}
-    <div>
-        <h1>Title / Hero Image</h1>
-    </div>
+    <section>
+        <div class="view">
+            <img class="img-fluid" src="{{url_for('static', filename ='img/parallax_1.jpeg')}}" alt="">
+            <div class="carousel-caption">
+                <h1>Raghav Nair</h1>
+                <h2>Software Engineer</h2>
+            </div>
+        </div>
+    </section>
 
-    <div>
-        <h1>Profile</h1>
-    </div>
+    <section>
+        <div class="view">
+            <div>
+                <h1>About Me</h1>
+                <h3>A passionate </h3>
+            </div>
+        </div>
+    </section>
 
+    <section>
+        <div class="thumbnail">
+            <a href="https://www.pokemon.com/us/">
+                <img src="{{url_for('static', filename ='img/tpci_logo.png')}}" alt="tpci" class="img-thumbnail" style="height:200px; width:600px">
+            </a>
+            <a href="https://www.disney.com/">
+                <img src="{{url_for('static', filename ='img/disney_logo.png')}}" alt="disney" class="img-thumbnail" style="height:200px; width:200px">
+            </a>
+            <a href="https://www.starbucks.com/">
+                <img src="{{url_for('static', filename ='img/starbucks_logo.png')}}" alt="starbucks" class="img-thumbnail" style="height:200px; width:200px">
+            </a>
+            <a href="https://www.airbiquity.com/">
+                <img src="{{url_for('static', filename ='img/airbiquity_logo.png')}}" alt="airbiquity" class="img-thumbnail" style="height:200px; width:200px">
+            </a>
+            <a href="https://www.apollo.edu/">
+                <img src="{{url_for('static', filename ='img/apollo_group_logo.png')}}" alt="apollo" class="img-thumbnail" style="height:200px; width:600px">
+            </a>
+            <a href="https://www.pointinside.com/">
+                <img src="{{url_for('static', filename ='img/pointinside_logo.png')}}" alt="pointinside" class="img-thumbnail" style="height:200px; width:200px">
+            </a>
+        </div>
+        <!--<div class="row">
+
+                <a href="#" class="thumbnail float-left">
+                    <img src="{{url_for('static', filename ='img/tpci_logo.png')}}" alt="tpci" style="width:400px;height:200px;">
+                </a>
+
+                <a href="#" class="thumbnail float-right">
+                    <img src="{{url_for('static', filename ='img/disney_logo.png')}}" alt="disney" style="width:200px;height:200px;">
+                </a>
+
+                <a href="#" class="thumbnail float-right">
+                    <img src="{{url_for('static', filename ='img/starbucks_logo.png')}}" alt="starbucks" style="width:200px;height:200px;">
+                </a>
+        </div> -->
+    </section>
+
+    <!-- <div>
     <div>
         <h1>Connect With Me!</h1>
-    </div>
+    </div> -->
 {% endblock %}

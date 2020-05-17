@@ -10,24 +10,11 @@ def home_page():
     return render_template("home.html")
 
 
-@APPLICATION.route('/career', methods=["GET"])
-def careers_page():
-    careers = {
-        "The Pokémon Company International": "https://www.pokemon.com/us/",
-        "The Walt Disney Company": "https://www.disney.com/",
-        "Starbucks": "https://www.starbucks.com/",
-        "Airbiquity": "https://www.airbiquity.com/",
-        "Apollo Education Group": "https://www.apollo.edu/",
-        "PointInside": "https://www.pointinside.com/"
-    }
-    return render_template("items.html", page_title="Careers", items=careers)
-
-
 @APPLICATION.route('/projects', methods=["GET"])
 def projects_page():
     projects = {
-        "Who's That Pokémon": "https://whispering-cove-17469.herokuapp.com/",
-        "View For Donations (TBD)": "",
+        "Who's That Pokémon": "http://whos-that-pokemon.raghav-nair.com/",
+        "View For Donations": "http://donate-to-charity.raghav-nair.com/",
         "Introduction To Python": "https://github.com/nairraghav/Introduction-To-Python"
     }
     return render_template("items.html", page_title="Personal Projects", items=projects)
