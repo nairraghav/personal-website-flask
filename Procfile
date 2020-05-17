@@ -1,1 +1,1 @@
-web: gunicorn --chdir pokemon app:APP
+web: gunicorn --chdir app app:APPLICATION
