@@ -14,7 +14,6 @@ def home_page():
 def projects_page():
     projects = {
         "Who's That Pokémon": "http://whos-that-pokemon.raghav-nair.com/",
-        "View For Donations": "http://donate-to-charity.raghav-nair.com/",
         "Introduction To Python": "https://github.com/nairraghav/Introduction-To-Python"
     }
     return render_template("items.html", page_title="Personal Projects", items=projects)

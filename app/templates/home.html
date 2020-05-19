@@ -1,7 +1,43 @@
 <style>
     .carousel-caption {
-        position: relative;
-        bottom: 10px
+        position: absolute;
+        top: 45%;
+    }
+
+    .flex-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        padding: 10px;
+    }
+
+    /* to center flex-items */
+    .flex-item {
+        margin: auto;
+    }
+
+    footer {
+      background: #061D25;
+      padding: 10px 0;
+      text-align: center;
+    }
+    footer a {
+      color: #70726F;
+      font-size: 20px;
+      padding: 10px;
+      border-right: 1px solid #70726F;
+      transition: all .5s ease;
+    }
+    footer a:first-child {
+      border-left: 1px solid #70726F;
+    }
+    footer a:hover {
+      color: white;
+    }
+
+    .connect-with-me {
+        text-align: left;
+        color: white;
     }
 </style>
 {% extends "base.html" %}
@@ -31,42 +67,54 @@
 
     <section>
         <h1>Where I've Worked</h1>
-        <div class="thumbnail">
-            <a href="https://www.pokemon.com/us/">
-                <img src="{{url_for('static', filename ='img/tpci_logo.png')}}" alt="tpci" class="img-thumbnail" style="height:200px; width:600px">
-            </a>
-            <a href="https://www.disney.com/">
-                <img src="{{url_for('static', filename ='img/disney_logo.png')}}" alt="disney" class="img-thumbnail" style="height:200px; width:200px">
-            </a>
-            <a href="https://www.starbucks.com/">
-                <img src="{{url_for('static', filename ='img/starbucks_logo.png')}}" alt="starbucks" class="img-thumbnail" style="height:200px; width:200px">
-            </a>
-            <a href="https://www.airbiquity.com/">
-                <img src="{{url_for('static', filename ='img/airbiquity_logo.png')}}" alt="airbiquity" class="img-thumbnail" style="height:200px; width:200px">
-            </a>
-            <a href="https://www.apollo.edu/">
-                <img src="{{url_for('static', filename ='img/apollo_group_logo.png')}}" alt="apollo" class="img-thumbnail" style="height:200px; width:600px">
-            </a>
-            <a href="https://www.pointinside.com/">
-                <img src="{{url_for('static', filename ='img/pointinside_logo.png')}}" alt="pointinside" class="img-thumbnail" style="height:200px; width:200px">
-            </a>
+        <div>
+            <div>
+                <div class="flex-container">
+                <div class="flex-item">
+                    <img src="{{url_for('static', filename ='img/tpci_logo.png')}}" alt="1" class="img-responsive" style="height:100px; width:300px">
+                </div>
+                <div class="flex-item">
+                    <img src="{{url_for('static', filename ='img/disney_logo.png')}}" alt="2" class="img-responsive" style="height:150px; width:150px"/>
+                </div>
+                <div class="flex-item">
+                    <img src="{{url_for('static', filename ='img/starbucks_logo.png')}}" alt="3" class="img-responsive" style="height:150px; width:150px"/>
+                </div>
+                <div class="flex-item">
+                    <img src="{{url_for('static', filename ='img/airbiquity_logo.png')}}" alt="4" class="img-responsive" style="height:150px; width:150px"/>
+                </div>
+                <div class="flex-item">
+                    <img src="{{url_for('static', filename ='img/pointinside_logo.png')}}" alt="5"class="img-responsive" style="height:150px; width:150px"/>
+                </div>
+                <div class="flex-item">
+                    <img src="{{url_for('static', filename ='img/apollo_group_logo.png')}}" alt="5"class="img-responsive" style="height:100px; width:300px">
+                </div>
+            </div>
+            </div>
         </div>
     </section>
 
     <section>
         <h1>Education</h1>
-        <div class="thumbnail">
-            <a href="http://www.washington.edu/">
-                <img src="{{url_for('static', filename ='img/syracuse_logo.png')}}" alt="UW" class="img-thumbnail" style="height:200px; width:200px">
-            </a>
-            <a href="https://www.syracuse.edu/">
-                <img src="{{url_for('static', filename ='img/uw_logo.png')}}" alt="SU" class="img-thumbnail" style="height:200px; width:200px">
-            </a>
+        <div>
+            <div>
+                <div class="flex-container">
+                    <div class="flex-item">
+                        <img src="{{url_for('static', filename ='img/syracuse_logo.png')}}" alt="UW" class="img-responsive" style="height:150px; width:150px">
+                    </div>
+                    <div class="flex-item">
+                        <img src="{{url_for('static', filename ='img/uw_logo.png')}}" alt="2" class="img-responsive" style="height:150px; width:150px"/>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- <div>
-    <div>
-        <h1>Connect With Me!</h1>
-    </div> -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
+    <footer class="footer">
+        <div class="container text-center">
+            <p class="connect-with-me text-center">Connect With Me!</p>
+            <a href="https://www.linkedin.com/in/raghav-nair-a36a6949/"><i class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/nairraghav"><i class="fa fa-github"></i></a>
+        </div>
+    </footer>
 {% endblock %}
