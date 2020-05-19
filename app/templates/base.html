@@ -10,25 +10,20 @@
         <title>{% block title %}{% endblock %}</title>
     </head>
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-            <div class="navbar-collapse collapse w-100 order-3 dual-collapse2 container-fluid">
-                <ul class="navbar-nav ml-auto">
-                    {% for nav_item in (('Home', 'home_page'), ('Projects', 'projects_page'), ('Resume','resume_page')) %}
-                        {% if request.url_rule.endpoint == nav_item[1] %}
-                            <li class="nav-item active">
-                                <a class="nav-link" href="{{ url_for(nav_item[1]) }}">
-                        {% else %}
-                            <li class="nav-item">
-                                <a class="nav-link" href="{{ url_for(nav_item[1]) }}">
-                        {% endif %}
-                                    {{nav_item[0]}}
-                                </a>
-                            </li>
-                    {% endfor %}
-                </ul>
-            </div>
-        </nav>
-
+        <ul class="nav justify-content-end nav-pills nav-fill">
+            {% for nav_item in (('Home', 'home_page'), ('Projects', 'projects_page'), ('Resume','resume_page')) %}
+                {% if request.url_rule.endpoint == nav_item[1] %}
+                    <li class="nav-item">
+                        <a class="nav-link active" href="{{ url_for(nav_item[1]) }}">
+                {% else %}
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ url_for(nav_item[1]) }}">
+                {% endif %}
+                            {{nav_item[0]}}
+                        </a>
+                    </li>
+            {% endfor %}
+        </ul>
         {% block content %} {% endblock %}
     </body>
 </html>
