@@ -7,18 +7,4 @@ APPLICATION = Flask("personal-website")
 @APPLICATION.route("/", methods=["GET"])
 def home_page():
     """This method handles serving up the main home page of the website"""
-    return render_template("home.html")
-
-
-@APPLICATION.route('/projects', methods=["GET"])
-def projects_page():
-    projects = {
-        "Who's That Pokémon": "http://whos-that-pokemon.raghav-nair.com/",
-        "Introduction To Python": "https://github.com/nairraghav/Introduction-To-Python"
-    }
-    return render_template("items.html", page_title="Personal Projects", items=projects)
-
-
-@APPLICATION.route('/resume', methods=["GET"])
-def resume_page():
-    return render_template("resume.html")
+    return render_template("index.html")

@@ -1,0 +1,133 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Raghav Nair</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{{url_for('static', filename ='css/main.css')}}" />
+		<noscript><link rel="stylesheet" href="{{url_for('static', filename ='css/noscript.css')}}" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper-->
+			<div id="wrapper">
+
+				<!-- Nav -->
+					<nav id="nav">
+						<a href="#" class="icon solid fa-home"><span>Home</span></a>
+						<a href="#career" class="icon solid fa-building"><span>Career</span></a>
+						<a href="#project" class="icon solid fa-laptop-code"><span>Projects</span></a>
+						<a href="#resume" class="icon solid fa-address-card"><span>Resume</span></a>
+						<a href="#contact" class="icon solid fa-envelope"><span>Contact</span></a>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Me -->
+							<article id="home" class="panel intro">
+								<header>
+									<h1>Raghav Nair</h1>
+									<p>Software Engineer</p>
+								</header>
+								<a href="#work" class="jumplink pic">
+									<span class="arrow icon solid fa-chevron-right"></span>
+									<img src="{{url_for('static', filename ='img/ron_profile_shoot.jpg')}}" alt="" />
+								</a>
+							</article>
+
+						<!-- Work -->
+							<article id="career" class="panel">
+								<header>
+									<h2>Work</h2>
+								</header>
+								<section>
+									<div class="row">
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="https://www.pokemon.com/us/" class="image fit"><img src="{{url_for('static', filename ='img/tpci_logo.png')}}" alt="TPCi"></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="https://www.disney.com/" class="image fit"><img src="{{url_for('static', filename ='img/disney_logo.png')}}" alt="Disney"></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="https://www.starbucks.com/" class="image fit"><img src="{{url_for('static', filename ='img/starbucks_logo.png')}}" alt="Starbucks"></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="https://www.airbiquity.com/" class="image fit"><img src="{{url_for('static', filename ='img/airbiquity_logo.png')}}" alt="Airbiquity"></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="https://www.apollo.edu/" class="image fit"><img src="{{url_for('static', filename ='img/apollo_group_logo.png')}}" alt="ApolloEducationGroup"></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="https://www.pointinside.com/" class="image fit"><img src="{{url_for('static', filename ='img/pointinside_logo.png')}}" alt="PointInside"></a>
+										</div>
+									</div>
+								</section>
+
+								<header>
+									<h2>Education</h2>
+								</header>
+								<section>
+									<div class="row">
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="http://www.washington.edu/" class="image fit"><img src="{{url_for('static', filename ='img/uw_logo.png')}}" alt="UW"></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="https://www.syracuse.edu/" class="image fit"><img src="{{url_for('static', filename ='img/syracuse_logo.png')}}" alt="SU"></a>
+										</div>
+									</div>
+								</section>
+							</article>
+
+						<!-- Personal Projects -->
+							<article id="project" class="panel">
+								<header>
+									<h2>Projects</h2>
+								</header>
+								<section>
+									<div class="row">
+
+										<div class="col-4 col-6-medium col-12-small">
+											<p>Who's That Pokémon</p>
+											<a href="http://whos-that-pokemon.raghav-nair.com/" class="image fit"><img src="{{url_for('static', filename ='img/wtp.png')}}" alt="Whos-That-Pokemon"></a>
+										</div>
+
+										<div class="col-4 col-6-medium col-12-small">
+											<p>Introduction To Python</p>
+											<a href="https://github.com/nairraghav/Introduction-To-Python" class="image fit"><img src="{{url_for('static', filename ='img/i2p.png')}}" alt="Introduction-To-Python"></a>
+										</div>
+									</div>
+								</section>
+							</article>
+
+						<!-- Resume -->
+							<article id="resume" class="panel">
+								<header>
+									<h2>Resume</h2>
+								</header>
+								<section>
+									<div class="cv-container">
+    									<iframe title="Raghav Nair Resume" src="{{url_for('static', filename ='pdf/Raghav_Nair_Resume.pdf')}}" style="width: 100%; height: 55rem;" frameborder="0"></iframe>
+									</div>
+								</section>
+							</article>
+					</div>
+
+				<!-- Footer -->
+					<div id="footer">
+						<ul class="copyright">
+							<li><a href="https://github.com/nairraghav" class="icon brands fa-github"><span>GitHub</span></a></li>
+							<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							<li><a href="https://www.linkedin.com/in/raghav-nair-a36a6949/" class="icon brands fa-linkedin"><span>LinkedIn</span></a></li>
+						</ul>
+					</div>
+			</div>
+
+		<!-- Scripts -->
+			<script src="{{url_for('static', filename ='js/jquery.min.js')}}"></script>
+			<script src="{{url_for('static', filename ='js/browser.min.js')}}"></script>
+			<script src="{{url_for('static', filename ='js/breakpoints.min.js')}}"></script>
+			<script src="{{url_for('static', filename ='js/util.js')}}"></script>
+			<script src="{{url_for('static', filename ='js/main.js')}}"></script>
+	</body>
+</html>
