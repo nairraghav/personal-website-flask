@@ -8,7 +8,3 @@ APPLICATION = Flask("personal-website")
 def home_page():
     """This method handles serving up the main home page of the website"""
     return render_template("index.html")
-
-@APPLICATION.route("/.well-known/acme-challenge/NwkuGPbkIDpiiX41oAvdhbmYlYZMs_Z84FL-aHdTIgE", methods=["GET"])
-def acme_challenge():
-    return "NwkuGPbkIDpiiX41oAvdhbmYlYZMs_Z84FL-aHdTIgE.ASeTiEznMePdiNnTUXpgttDQZVQE234QELbwYveHqLg"
