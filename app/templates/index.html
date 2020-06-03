@@ -1,3 +1,9 @@
+<style>
+	.logo-background {
+		background: grey;
+	}
+</style>
+
 <!DOCTYPE HTML>
 <html>
 	<head>
@@ -6,43 +12,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="{{url_for('static', filename ='css/main.css')}}" />
 		<noscript><link rel="stylesheet" href="{{url_for('static', filename ='css/noscript.css')}}" /></noscript>
-		<!--auto compiled css & Js-->
-    <script type="text/javascript"
-            src="//code.jquery.com/jquery-1.9.1.js">
-  </script>
-    <link rel="stylesheet"
-          type="text/css"
-          href="/css/result-light.css">
-
-    <script type="text/javascript"
-            src=
-"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
-  </script>
-    <link rel="stylesheet"
-          type="text/css"
-          href=
-"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-    <link rel="stylesheet"
-          type="text/css"
-          href=
-"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <!-- JavaScript for adding
-     slider for multiple images
-     shown at once-->
-    <script type="text/javascript">
-        $(window).load(function() {
-            $(".carousel .item").each(function() {
-                var i = $(this).next();
-                i.length || (i = $(this).siblings(":first")),
-                  i.children(":first-child").clone().appendTo($(this));
-
-                for (var n = 0; n < 4; n++)(i = i.next()).length ||
-                  (i = $(this).siblings(":first")),
-                  i.children(":first-child").clone().appendTo($(this))
-            })
-        });
-    </script>
 	</head>
+
 	<body class="is-preload">
 
 		<!-- Wrapper-->
@@ -77,47 +48,24 @@
 									<h2>Where I've Worked</h2>
 								</header>
 								<section>
-									<div class="container">
-										<!-- bootstrap card with row name myCarousel as row 1-->
-										<div class="carousel slide" id="careerCarousel">
-											<div class="carousel-inner">
-												<div class="item active">
-													<div class="col-xs-2">
-														<a href="https://www.pokemon.com/us/" class="image fit"><img src="{{url_for('static', filename ='img/tpci_logo.png')}}" alt="TPCi"></a>
-													</div>
-												</div>
-												<div class="item">
-													<div class="col-xs-2">
-														<a href="https://www.disney.com/" class="image fit"><img src="{{url_for('static', filename ='img/disney_logo.png')}}" alt="Disney"></a>
-													</div>
-												</div>
-												<div class="item">
-													<div class="col-xs-2">
-														<a href="https://www.starbucks.com/" class="image fit"><img src="{{url_for('static', filename ='img/starbucks_logo.png')}}" alt="Starbucks"></a>
-													</div>
-												</div>
-												<div class="item">
-													<div class="col-xs-2">
-														<a href="https://www.airbiquity.com/" class="image fit"><img src="{{url_for('static', filename ='img/airbiquity_logo.png')}}" alt="Airbiquity"></a>
-													</div>
-												</div>
-												<div class="item">
-													<div class="col-xs-2">
-														<a href="https://www.apollo.edu/" class="image fit"><img src="{{url_for('static', filename ='img/apollo_group_logo.png')}}" alt="ApolloEducationGroup"></a>
-													</div>
-												</div>
-												<div class="item">
-													<div class="col-xs-2">
-														<a href="https://www.pointinside.com/" class="image fit"><img src="{{url_for('static', filename ='img/pointinside_logo.png')}}" alt="PointInside"></a>
-													</div>
-												</div>
-											</div>
-											<a class="left carousel-control" href="#careerCarousel" data-slide="prev">
-										  		<i class="glyphicon glyphicon-chevron-left"></i>
-											</a>
-											<a class="right carousel-control" href="#careerCarousel" data-slide="next">
-												<i class="glyphicon glyphicon-chevron-right"></i>
-											</a>
+									<div class="row">
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="https://www.pokemon.com/us/" class="image fit"><img src="{{url_for('static', filename ='img/tpci_logo.png')}}" alt="TPCi"></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="https://www.disney.com/" class="image fit"><img src="{{url_for('static', filename ='img/disney_logo.png')}}" alt="Disney"></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="https://www.starbucks.com/" class="image fit"><img src="{{url_for('static', filename ='img/starbucks_logo.png')}}" alt="Starbucks"></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="https://www.airbiquity.com/" class="image fit"><img src="{{url_for('static', filename ='img/airbiquity_logo.png')}}" alt="Airbiquity"></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="https://www.apollo.edu/" class="image fit"><img src="{{url_for('static', filename ='img/apollo_group_logo.png')}}" alt="ApolloEducationGroup"></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="https://www.pointinside.com/" class="image fit"><img src="{{url_for('static', filename ='img/pointinside_logo.png')}}" alt="PointInside"></a>
 										</div>
 									</div>
 								</section>
@@ -126,32 +74,15 @@
 									<h2>Education</h2>
 								</header>
 								<section>
-									<div class="container">
-										<!-- bootstrap card with row name myCarousel as row 1-->
-										<div class="carousel slide" id="educationCarousel">
-											<div class="carousel-inner">
-												<div class="item active">
-													<div class="col-xs-2">
-														<a href="https://math.washington.edu/" class="image fit"><img src="{{url_for('static', filename ='img/uw_logo.png')}}" alt="UW"></a>
-													</div>
-												</div>
-												<div class="item">
-													<div class="col-xs-2">
-														<a href="https://engineeringonline.syr.edu/graduate-programs/computer-science/" class="image fit"><img src="{{url_for('static', filename ='img/syracuse_logo.png')}}" alt="SU"></a>
-													</div>
-												</div>
-												<div class="item">
-													<div class="col-xs-2">
-														<a href="https://executive.berkeley.edu/programs/artificial-intelligence-business-strategies-and-applications" class="image fit"><img src="{{url_for('static', filename ='img/berkeley_logo.png')}}" alt="Berkeley"></a>
-													</div>
-												</div>
-											</div>
-											<a class="left carousel-control" href="#educationCarousel" data-slide="prev">
-										  		<i class="glyphicon glyphicon-chevron-left"></i>
-											</a>
-											<a class="right carousel-control" href="#educationCarousel" data-slide="next">
-												<i class="glyphicon glyphicon-chevron-right"></i>
-											</a>
+									<div class="row">
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="https://math.washington.edu/" class="image fit"><img src="{{url_for('static', filename ='img/uw_logo.png')}}" alt="UW"></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small">
+											<a href="https://engineeringonline.syr.edu/graduate-programs/computer-science/" class="image fit"><img src="{{url_for('static', filename ='img/syracuse_logo.png')}}" alt="SU"></a>
+										</div>
+										<div class="col-4 col-6-medium col-12-small logo-background">
+											<a href="https://executive.berkeley.edu/programs/artificial-intelligence-business-strategies-and-applications" class="image fit"><img src="{{url_for('static', filename ='img/berkeley_logo.png')}}" alt="Berkeley"></a>
 										</div>
 									</div>
 								</section>
